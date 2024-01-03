@@ -19,7 +19,7 @@ def start(k) :
         state[2] = 1
     elif k//N == 1 :
         state[0] = N-1
-        state[1] = (k-N*2)-1
+        state[1] = (k-N)-1
         state[2] = 2
     elif k//N == 2 :
         state[0] = N-(k-N*2)
