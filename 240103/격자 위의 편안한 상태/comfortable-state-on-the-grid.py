@@ -3,7 +3,7 @@ dy = [0,-1,0,1]
 
 n, m = map(int,input().split())
 
-coo = [[0 for i in range(n)] for i in range(n)]
+coo = [[0 for i in range(n)] for j in range(n)]
 
 def isPA(x,y) :
     cnt = 0
