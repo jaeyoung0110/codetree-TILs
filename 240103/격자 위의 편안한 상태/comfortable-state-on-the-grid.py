@@ -7,12 +7,10 @@ coo = [[0 for i in range(n)] for j in range(n)]
 
 def isPA(x,y) :
     cnt = 0
-    for i in range(4) :
-        try :
-            if coo[x+dx[i]][y+dy[i]] == 1 :
+    for i in range(4):
+        if 0 <= x + dx[i] < n and 0 <= y + dy[i] < n:
+            if coo[x + dx[i]][y + dy[i]] == 1:
                 cnt += 1
-        except :
-            continue
     if cnt == 3 :
         return 1
     else :
