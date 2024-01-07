@@ -18,6 +18,10 @@ for i in data :
 
 max_sum = 0
 
+if K > len(coo) :
+    for i in data :
+        max_sum += i[1]
+
 for i in range(len(coo) - K) :
     sum_data = 0
     for j in range(i, i+K+1) :
@@ -25,6 +29,7 @@ for i in range(len(coo) - K) :
             sum_data += 1
         elif coo[j] == 'H' :
             sum_data += 2
+    print(sum_data, end=' ')
     max_sum = max(max_sum, sum_data)
 
 print(max_sum)
