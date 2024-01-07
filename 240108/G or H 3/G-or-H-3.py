@@ -20,7 +20,10 @@ max_sum = 0
 
 if K > len(coo) :
     for i in data :
-        max_sum += i[1]
+        if i[1] == 'G' :
+            max_sum += 1
+        else :
+            max_sum += 2
 
 for i in range(len(coo) - K) :
     sum_data = 0
