@@ -20,12 +20,14 @@ for i in range(101) : # i = 사진 시작 위치
                 cnt_G += 1
                 if cnt_G == 1 :
                     idx_G[0] = k
+                    idx_G[0] = k
                 else :
                     idx_G[1] = k
             elif coo[k] == 'H' : 
                 cnt_H += 1
                 if cnt_H == 1 :
                     idx_H[0] = k
+                    idx_H[1] = k
                 else :
                     idx_H[1] = k
         # G H 값 동일
