@@ -6,7 +6,7 @@ for t1 in range(5) :
     for t21 in range(5) :
         if t21 == t1 : continue
         for t22 in range(t21+1, 5) :
-            if t21 == t1 : continue
+            if t22 == t1 : continue
             sum1 = datas[t1]
             sum2 = datas[t21] + datas[t22]
             sum3 = sum(datas) - (sum1 + sum2)
