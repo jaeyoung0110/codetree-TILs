@@ -2,7 +2,7 @@ def guess(pred, data) : # int형으로 받음
     cnt_1, cnt_2 = 0, 0
     pred, data = str(pred), str(data)
     for i,v in enumerate(data) :
-        if v in  :
+        if v in pred :
             if pred[i] == v :
                 cnt_1 += 1
             else :
