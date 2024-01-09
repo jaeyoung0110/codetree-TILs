@@ -20,9 +20,9 @@ for i in range(1,10) :
     for j in range(1,10) :
         for k in range(1,10) :
             same_cnt = 0
-            pred = i*100+j*10+k
+            ans = i*100+j*10+k
             for l in range(N) :
-                if guess(data[l][0],pred) == [data[l][1],data[l][2]] :
+                if guess(ans,data[l][0]) == [data[l][1],data[l][2]] :
                     same_cnt += 1
             if same_cnt == N :
                 ans_cnt += 1
