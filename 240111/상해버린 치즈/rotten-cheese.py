@@ -18,7 +18,16 @@ for i in range(M) : # i : 상한치즈 idx
     # 먹은 기록 탐색하면서 상한거 먹으면 data_s 추가
     for data in log_d :
         if data[1] == i :
-            data_s.append([data[0],data[2]])
+            is_dup = False
+            for v in data_s :
+                if v[0] == data[0] :
+                    is_dup = True
+                    if v[1] > data[2] :
+                        v[1] = data[2]
+            if is_dup == False :
+                data_s.append([data[0],data[2]])
+                        
+                
     
     # 실제 배탈 기록과 로그 배탈 기록 일치 확인
     is_ok = True
@@ -30,11 +39,12 @@ for i in range(M) : # i : 상한치즈 idx
     
     # 가능한 케이스라면 배아픈 사람 수 구하기
     if is_ok == True :
-        cnt_s = 0
+        cnt_s = []
         for data in log_d :
             if data[1] == i :
-                cnt_s += 1
-        ans_cnt = max(ans_cnt, cnt_s)
+                if data[0] not in cnt_s :
+                    cnt_s.append(data[0])
+        ans_cnt = max(ans_cnt, len(cnt_s))
 
 # 출력부
 print(ans_cnt)
