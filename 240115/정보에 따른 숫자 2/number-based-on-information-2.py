@@ -1,7 +1,7 @@
 # input / var
 T, a, b = map(int,input().split())
 datas = []
-coo = [0 for _ in range(b+1)]
+coo = [1001]
 for _ in range(T) :
     c, x = input().split()
     x = int(x)
