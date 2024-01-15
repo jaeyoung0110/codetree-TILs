@@ -1,11 +1,9 @@
 # input / var
 T, a, b = map(int,input().split())
-datas = []
-coo = [1001]
+coo = [0 for _ in range(1001)]
 for _ in range(T) :
     c, x = input().split()
     x = int(x)
-    datas.append([c,x])
     coo[x] = c
 
 ans_cnt = 0
