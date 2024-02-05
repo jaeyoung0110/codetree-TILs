@@ -7,7 +7,7 @@ for _ in range(n) :
     datas.append(list(map(int,input().split())))
 
 for data in datas :
-    for i in range(data[0], data[1]+1) :
+    for i in range(data[0]-1, data[1]) :
         coo[i] += 1
     
 ans = 'No'
