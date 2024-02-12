@@ -30,7 +30,7 @@ class DLL :
             self.tail = new_node
         else :
             # 새 노드 처리
-            new_node.prev(self.tail)
+            new_node.prev = self.tail
             # 테일 노드 처리
             self.tail.next(new_node)
             self.tail = new_node
