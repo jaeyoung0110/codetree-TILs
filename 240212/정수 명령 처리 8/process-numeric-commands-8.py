@@ -32,7 +32,7 @@ class DLL :
             # 새 노드 처리
             new_node.prev = self.tail
             # 테일 노드 처리
-            self.tail.next(new_node)
+            self.tail.next = new_node
             self.tail = new_node
         self.node_num += 1
     
