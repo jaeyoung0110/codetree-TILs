@@ -27,4 +27,5 @@ for i in range(N) :
             ans_cnt += 1
             break
 # print
-print(ans_cnt)
+if N == 1 : print(2)
+else : print(ans_cnt)
