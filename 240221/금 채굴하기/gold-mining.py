@@ -15,12 +15,12 @@ def is_rhom(k,i,j,x,y) :
 
 ans_max_gold = 0
 for k in range(n) :
-    for i in range(k//2,n-k//2) :
-        for j in range(k//2,n-k//2) :
+    for i in range(n) :
+        for j in range(n) :
             gold_value = 0
             gold_cnt = 0
-            for x in range(i-k,i+k+1) :
-                for y in range(j-k, j+k+1) :
+            for x in range(n) :
+                for y in range(n) :
                     if is_range(x,y) and is_rhom(k,i,j,x,y) :
                         if data_arr[x][y] == 1 :
                             gold_value += m
