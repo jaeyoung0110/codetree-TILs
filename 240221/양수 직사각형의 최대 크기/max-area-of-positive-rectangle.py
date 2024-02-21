@@ -6,7 +6,7 @@ for _ in range(n) :
 
 ## declare
 # var
-ans_max_size = 0
+ans_max_size = -1
 # fuc
 def is_plus_square(r,c,h,l) :
     for y in range(r,r+h) :
