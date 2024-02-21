@@ -14,9 +14,9 @@ def is_rhom(k,i,j,x,y) :
     else : return False
 
 ans_max_gold = 0
-for k in range((n-1)+1) :
-    for i in range(k%2,n-k%2) :
-        for j in range(k%2,n-k%2) :
+for k in range(n) :
+    for i in range(k//2,n-k//2) :
+        for j in range(k//2,n-k//2) :
             gold_value = 0
             gold_cnt = 0
             for x in range(i-k,i+k+1) :
