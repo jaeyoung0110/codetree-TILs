@@ -1,5 +1,8 @@
 ## k값에 따라 그리드DFS 해서 덩어리 개수 구함
 ## 최댓값 갱신 + 최댓값에 k도 같이 저장
+import sys
+sys.setrecursionlimit(10**6)
+
 ans = [0,1]
 
 N, M = map(int,input().split())
